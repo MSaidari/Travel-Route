@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background: #ffffff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.sidebar a {
+    color: #333;
+    font-weight: 500;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.sidebar a i {
+    margin-right: 10px;
+}
+.sidebar a:hover {
+    background: #f1f1f1;
+}
+
+/* Sidebar küçüldüğünde */
+.sidebar.collapsed {
+    width: 70px;
+}
+.sidebar.collapsed a span {
+    display: none;
+}
+.sidebar.collapsed a i {
+    margin-right: 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background: white;
+    height: 60px;
+    padding: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Dashboard İçerik */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.card {
+    border-radius: 12px;
+    border: none;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}

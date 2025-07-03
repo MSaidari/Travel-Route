@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    background: url('https://images.pexels.com/photos/327434/pexels-photo-327434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header (Üst Menü) */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: #f8f8f8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 70px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+/* Form Konteynerini Ortalamak İçin */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Sayfanın tamamını kaplasın */
+}
+
+/* Form Kutusu */
+.form-container {
+    background: linear-gradient(135deg, #f8f9fa, #e3e7ed);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Butonlar */
+.btn-primary {
+    background-color: #000;
+    border: none;
+    transition: 0.3s;
+    border-radius: 12px;
+    padding: 12px;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+}
+
+/* Toggle Link */
+.toggle-link {
+    cursor: pointer;
+    color: #333;
+    display: block;
+    margin-top: 15px;
+}
+
+.toggle-link:hover {
+    text-decoration: underline;
+}
+
+/* Google ile Giriş Butonu */
+.social-login {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.social-login button {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px; /* Yazı boyutunu artırdık */
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-login button:hover {
+    background-color: #f0f0f0;
+}
+
+.social-login button img {
+    width: 24px; /* Logoyu biraz büyüttük */
+    height: 24px;
+    margin-right: 10px;
+}

@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background-color: #f8f9fb;
+    color: #2c3e50;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: #f8f8f8;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 70px;
+    /* Logo boyutu */
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #000;
+}
+
+.user-icon {
+    cursor: pointer;
+}
+
+.user-icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.user-menu {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+}
+.user-menu a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #333;
+}
+.user-menu a:hover {
+    background: #f0f0f0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+.preview-mode {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.top-section {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    align-items: stretch;
+}
+
+.gallery-wrapper {
+    display: flex;
+    gap: 10px;
+    width: 60%;
+    max-height: 300px;
+    padding-left: 50px;
+    
+}
+
+.gallery-left {
+    flex: 2;
+}
+
+.gallery-left img {
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.gallery-right img {
+    width: 100%;
+    height: calc(50% - 5px);
+    object-fit: cover;
+    border-radius: 10px;
+}
+.counter-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+  }
+  
+  .counter button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #eee;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .counter span {
+    font-weight: bold;
+    min-width: 20px;
+    text-align: center;
+  }
+  
+.details {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    min-width: 35%;
+    margin-right: 50px;
+}
+
+.details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-green {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-blue {
+    background-color: #007bff;
+    color: white;
+}
+.tab {
+    width: 85%;
+    margin: 0 auto; /* Ortalamak için */
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+.tab-menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    background-color: white;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.tab-item {
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tab-item.active {
+    border-bottom: 3px solid #007bff;
+    color: #007bff;
+}
+
+.tab-content {
+    padding: 20px;
+    background-color: white;
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+.reservation-bar {
+    display: flex;
+    gap: 20px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    align-items: center;
+  }
+  
+  .select-box {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+    flex: 1;
+    cursor: pointer;
+  }
+  
+  .select-box i {
+    margin-bottom: 4px;
+    color: #0d6efd;
+  }
+  
+  .select-box label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .select-box select,
+  .select-box div {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .btn-update {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+  
+  .guest-dropdown {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    margin-top: 10px;
+  }
+  
+  .counter-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .counter button {
+    padding: 4px 10px;
+    font-weight: bold;
+  }
+  
+  .counter span {
+    margin: 0 10px;
+    font-weight: bold;
+  }
+  
+  .tour-price-card {
+    background: #e8fff3;
+    border: 1px solid #5cb85c;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tour-title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .discount-badge {
+    background: #dc3545;
+    color: white;
+    padding: 3px 6px;
+    font-size: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+  
+  .price-box {
+    text-align: right;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .new-price {
+    font-size: 20px;
+    color: #198754;
+    font-weight: bold;
+  }
+  #guestSummary{
+    cursor: pointer;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      background: white;
+  }
+  #guestDropdown{
+    display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 999;
+  }
+  
+@media (max-width: 768px) {
+    .top-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-wrapper,
+    .details {
+        width: 100%;
+    }
+}
+.like-wrapper {
+  text-align: right;
+  margin-bottom: 10px;
+}
+.like-button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: gray;
+  cursor: pointer;
+  transition: color .3s;
+}
+.like-button:hover {
+  color: red;
+}
+
+.like-button.liked {
+  color: red;
+}
+
+/* ───────── Yorum & Beğeni Bölümü Stil (blog.css ile uyumlu) ───────── */
+.comments-container {
+  width: 50%;
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+/* Like butonuna ait stil (sayfanın üstünde) */
+.like-wrapper {
+  text-align: right;
+  margin-bottom: 10px;
+}
+.like-button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: gray;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.like-button:hover {
+  color: red;
+}
+
+/* Yorum formu */
+.comment-form {
+  position: relative;
+  padding-top: 40px; /* yıldızlar için boşluk */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.comment-form textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 120px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: auto;
+  margin-bottom: 16px;
+}
+.comment-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+  width: auto;
+}
+
+/* Yıldızlı puanlama (rating-stars) */
+.rating-stars {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+.rating-stars input {
+  display: none;
+}
+.rating-stars label {
+  font-size: 25px;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.rating-stars input:checked ~ label,
+.rating-stars label:hover,
+.rating-stars label:hover ~ label {
+  color: #ffcc00;
+}
+
+/* Yorum öğeleri */
+.comment-item {
+  background: #fff;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  position: relative;
+  box-sizing: border-box;
+}
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.comment-header strong {
+  font-size: 16px;
+  color: #333;
+}
+.comment-header small {
+  font-size: 12px;
+  color: gray;
+}
+.user-rating {
+  font-size: 14px;
+  color: #ffcc00;
+  display: flex;
+  align-items: center;
+}
+.delete-button {
+  background: none;
+  border: 1px solid red;
+  color: red;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background 0.2s, color 0.2s;
+}
+.delete-button:hover {
+  background: red;
+  color: #fff;
+}
+
+
+/* ► Success alert */
+.alert-success {
+  margin: 15px 0;
+  padding: 10px;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  color: #155724;
+  border-radius: 5px;
+}
+
+
